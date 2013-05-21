@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form3 : Form
+    public partial class Form8 : Form
     {
-        public Form3()
+        public Form8()
         {
             InitializeComponent();
         }
@@ -24,19 +24,11 @@ namespace Projeto
 
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Form8_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Clientes1' table. You can move, or remove it, as needed.
-            this.clientes1TableAdapter.Fillbyinsericliente(this.database1DataSet.Clientes1);
             // TODO: This line of code loads data into the 'database1DataSet.Clientes' table. You can move, or remove it, as needed.
             this.clientesTableAdapter.Fill(this.database1DataSet.Clientes);
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.clientesTableAdapter.FillByCliente(this.database1DataSet.Clientes,textBox1.Text);
-             
         }
     }
 }

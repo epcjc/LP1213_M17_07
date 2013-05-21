@@ -18,11 +18,30 @@ namespace Projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
+         this.refeiçõesTableAdapter.Insert(this.textBox1.Text, this.textBox2.Text,
+             
+           
+       
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void refeiçõesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Refeições' table. You can move, or remove it, as needed.
+            this.refeiçõesTableAdapter.Fill(this.database1DataSet.Refeições);
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
