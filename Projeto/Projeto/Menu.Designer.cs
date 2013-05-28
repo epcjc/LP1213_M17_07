@@ -55,6 +55,7 @@
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,6 +116,7 @@
             this.encomendaToolStripMenuItem.Name = "encomendaToolStripMenuItem";
             this.encomendaToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.encomendaToolStripMenuItem.Text = "Encomenda ";
+            this.encomendaToolStripMenuItem.Click += new System.EventHandler(this.encomendaToolStripMenuItem_Click);
             // 
             // inseriToolStripMenuItem
             // 
@@ -151,21 +153,21 @@
             // inserirToolStripMenuItem1
             // 
             this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.inserirToolStripMenuItem1.Text = "Inserir";
             this.inserirToolStripMenuItem1.Click += new System.EventHandler(this.inserirToolStripMenuItem1_Click);
             // 
             // listarToolStripMenuItem2
             // 
             this.listarToolStripMenuItem2.Name = "listarToolStripMenuItem2";
-            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.listarToolStripMenuItem2.Text = "Listar";
             this.listarToolStripMenuItem2.Click += new System.EventHandler(this.listarToolStripMenuItem2_Click);
             // 
             // pesquisrToolStripMenuItem
             // 
             this.pesquisrToolStripMenuItem.Name = "pesquisrToolStripMenuItem";
-            this.pesquisrToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pesquisrToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.pesquisrToolStripMenuItem.Text = "Pesquisar";
             this.pesquisrToolStripMenuItem.Click += new System.EventHandler(this.pesquisrToolStripMenuItem_Click);
             // 
@@ -239,11 +241,12 @@
             this.refeiçõesIngredienteToolStripMenuItem.Name = "refeiçõesIngredienteToolStripMenuItem";
             this.refeiçõesIngredienteToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
             this.refeiçõesIngredienteToolStripMenuItem.Text = "Refeições_Ingrediente";
+            this.refeiçõesIngredienteToolStripMenuItem.Click += new System.EventHandler(this.refeiçõesIngredienteToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem5
             // 
             this.listarToolStripMenuItem5.Name = "listarToolStripMenuItem5";
-            this.listarToolStripMenuItem5.Size = new System.Drawing.Size(124, 22);
+            this.listarToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
             this.listarToolStripMenuItem5.Text = "Listar";
             this.listarToolStripMenuItem5.Click += new System.EventHandler(this.listarToolStripMenuItem5_Click);
             // 
@@ -257,7 +260,7 @@
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pesquisarToolStripMenuItem.Text = "Pesquisar";
             this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
             // 
@@ -275,6 +278,16 @@
             this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(106, 22);
             this.inserirToolStripMenuItem3.Text = "Inserir";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(538, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +295,7 @@
             this.BackgroundImage = global::Projeto.Properties.Resources.cantina1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(639, 340);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -323,6 +337,7 @@
         private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
+        private System.Windows.Forms.Button button1;
 
 
     }

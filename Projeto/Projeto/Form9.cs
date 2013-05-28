@@ -30,5 +30,10 @@ namespace Projeto
             this.encomendaTableAdapter.Fill(this.database1DataSet.Encomenda);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

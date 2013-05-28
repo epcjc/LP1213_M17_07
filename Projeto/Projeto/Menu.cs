@@ -34,7 +34,8 @@ namespace Projeto
 
         private void inseriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+           InserirEncomenda frm = new InserirEncomenda();
+            frm.ShowDialog();
         }
 
         private void clentesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -79,7 +80,8 @@ namespace Projeto
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            Form13 frm = new Form13();
+            frm.ShowDialog();
         }
 
         private void ingredienteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,7 +91,8 @@ namespace Projeto
 
         private void inserirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           
+          InserirIngrediente frm = new InserirIngrediente();
+            frm.ShowDialog();
         }
 
         private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -135,6 +138,22 @@ namespace Projeto
         }
 
         private void inseriToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form12 frm = new Form12();
+            frm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          Application.Exit();
+        }
+
+        private void encomendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void refeiçõesIngredienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

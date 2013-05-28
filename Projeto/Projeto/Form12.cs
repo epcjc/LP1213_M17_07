@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form6 : Form
+    public partial class Form12 : Form
     {
-        public Form6()
+        public Form12()
         {
             InitializeComponent();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void refeições_ingredientesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -24,24 +29,21 @@ namespace Projeto
 
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void Form12_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Refeições' table. You can move, or remove it, as needed.
-            this.refeiçõesTableAdapter.Fill(this.database1DataSet.Refeições);
             // TODO: This line of code loads data into the 'database1DataSet.Refeições_ingredientes' table. You can move, or remove it, as needed.
             this.refeições_ingredientesTableAdapter.Fill(this.database1DataSet.Refeições_ingredientes);
 
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            this.refeições_ingredientesTableAdapter.FillByRefeições_Ingredientes(this.database1DataSet.Refeições_ingredientes,Convert.ToInt16(textBox1.Text));
-            
-        }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
         {
-            Application.Exit();
+            //this.refeições_ingredientesTableAdapter.Insert(this.textBox1, Text, Convert.ToInt32(this.textBox2.Text, Convert.ToInt32));
+           
+            MessageBox.Show("Inserido com sucesso");
         }
     }
 }

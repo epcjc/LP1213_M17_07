@@ -30,5 +30,10 @@ namespace Projeto
             this.refeições_ingredientesTableAdapter.Fill(this.database1DataSet.Refeições_ingredientes);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

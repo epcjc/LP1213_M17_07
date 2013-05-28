@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form6
+    partial class Form13
     {
         /// <summary>
         /// Required designer variable.
@@ -31,60 +31,68 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label id_RefeiçõesLabel;
             System.Windows.Forms.Label id_IngredientesLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
-            this.refeições_ingredientesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.refeições_ingredientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form13));
             this.database1DataSet = new Projeto.Database1DataSet();
+            this.refeições_ingredientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.refeições_ingredientesTableAdapter = new Projeto.Database1DataSetTableAdapters.Refeições_ingredientesTableAdapter();
+            this.tableAdapterManager = new Projeto.Database1DataSetTableAdapters.TableAdapterManager();
+            this.refeições_ingredientesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.id_RefeiçõesTextBox = new System.Windows.Forms.TextBox();
+            this.id_IngredientesTextBox = new System.Windows.Forms.TextBox();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.refeições_ingredientesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.id_RefeiçõesTextBox = new System.Windows.Forms.TextBox();
-            this.id_IngredientesTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.refeiçõesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.refeições_ingredientesTableAdapter = new Projeto.Database1DataSetTableAdapters.Refeições_ingredientesTableAdapter();
-            this.tableAdapterManager = new Projeto.Database1DataSetTableAdapters.TableAdapterManager();
-            this.refeiçõesTableAdapter = new Projeto.Database1DataSetTableAdapters.RefeiçõesTableAdapter();
-            this.button2 = new System.Windows.Forms.Button();
             id_RefeiçõesLabel = new System.Windows.Forms.Label();
             id_IngredientesLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingNavigator)).BeginInit();
             this.refeições_ingredientesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refeiçõesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // id_RefeiçõesLabel
+            // database1DataSet
             // 
-            id_RefeiçõesLabel.AutoSize = true;
-            id_RefeiçõesLabel.Location = new System.Drawing.Point(215, 57);
-            id_RefeiçõesLabel.Name = "id_RefeiçõesLabel";
-            id_RefeiçõesLabel.Size = new System.Drawing.Size(70, 13);
-            id_RefeiçõesLabel.TabIndex = 1;
-            id_RefeiçõesLabel.Text = "Id Refeições:";
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // id_IngredientesLabel
+            // refeições_ingredientesBindingSource
             // 
-            id_IngredientesLabel.AutoSize = true;
-            id_IngredientesLabel.Location = new System.Drawing.Point(215, 83);
-            id_IngredientesLabel.Name = "id_IngredientesLabel";
-            id_IngredientesLabel.Size = new System.Drawing.Size(80, 13);
-            id_IngredientesLabel.TabIndex = 3;
-            id_IngredientesLabel.Text = "Id Ingredientes:";
+            this.refeições_ingredientesBindingSource.DataMember = "Refeições_ingredientes";
+            this.refeições_ingredientesBindingSource.DataSource = this.database1DataSet;
+            // 
+            // refeições_ingredientesTableAdapter
+            // 
+            this.refeições_ingredientesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Clientes1TableAdapter = null;
+            this.tableAdapterManager.ClientesTableAdapter = null;
+            this.tableAdapterManager.Encomenda1TableAdapter = null;
+            this.tableAdapterManager.EncomendaTableAdapter = null;
+            this.tableAdapterManager.Ingrediente1TableAdapter = null;
+            this.tableAdapterManager.IngredienteTableAdapter = null;
+            this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
+            this.tableAdapterManager.Refeições_ingredientesTableAdapter = this.refeições_ingredientesTableAdapter;
+            this.tableAdapterManager.Refeições1TableAdapter = null;
+            this.tableAdapterManager.RefeiçõesTableAdapter = null;
+            this.tableAdapterManager.TipoTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Projeto.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // refeições_ingredientesBindingNavigator
             // 
@@ -112,9 +120,74 @@
             this.refeições_ingredientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.refeições_ingredientesBindingNavigator.Name = "refeições_ingredientesBindingNavigator";
             this.refeições_ingredientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.refeições_ingredientesBindingNavigator.Size = new System.Drawing.Size(578, 25);
+            this.refeições_ingredientesBindingNavigator.Size = new System.Drawing.Size(415, 25);
             this.refeições_ingredientesBindingNavigator.TabIndex = 0;
             this.refeições_ingredientesBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // id_RefeiçõesLabel
+            // 
+            id_RefeiçõesLabel.AutoSize = true;
+            id_RefeiçõesLabel.Location = new System.Drawing.Point(12, 56);
+            id_RefeiçõesLabel.Name = "id_RefeiçõesLabel";
+            id_RefeiçõesLabel.Size = new System.Drawing.Size(70, 13);
+            id_RefeiçõesLabel.TabIndex = 1;
+            id_RefeiçõesLabel.Text = "Id Refeições:";
+            // 
+            // id_RefeiçõesTextBox
+            // 
+            this.id_RefeiçõesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_ingredientesBindingSource, "Id_Refeições", true));
+            this.id_RefeiçõesTextBox.Location = new System.Drawing.Point(98, 53);
+            this.id_RefeiçõesTextBox.Name = "id_RefeiçõesTextBox";
+            this.id_RefeiçõesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_RefeiçõesTextBox.TabIndex = 2;
+            // 
+            // id_IngredientesLabel
+            // 
+            id_IngredientesLabel.AutoSize = true;
+            id_IngredientesLabel.Location = new System.Drawing.Point(12, 82);
+            id_IngredientesLabel.Name = "id_IngredientesLabel";
+            id_IngredientesLabel.Size = new System.Drawing.Size(80, 13);
+            id_IngredientesLabel.TabIndex = 3;
+            id_IngredientesLabel.Text = "Id Ingredientes:";
+            // 
+            // id_IngredientesTextBox
+            // 
+            this.id_IngredientesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_ingredientesBindingSource, "Id_Ingredientes", true));
+            this.id_IngredientesTextBox.Location = new System.Drawing.Point(98, 79);
+            this.id_IngredientesTextBox.Name = "id_IngredientesTextBox";
+            this.id_IngredientesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_IngredientesTextBox.TabIndex = 4;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -124,23 +197,6 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // refeições_ingredientesBindingSource
-            // 
-            this.refeições_ingredientesBindingSource.DataMember = "Refeições_ingredientes";
-            this.refeições_ingredientesBindingSource.DataSource = this.database1DataSet;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -169,25 +225,6 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -206,11 +243,6 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
             // refeições_ingredientesBindingNavigatorSaveItem
             // 
             this.refeições_ingredientesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -220,129 +252,75 @@
             this.refeições_ingredientesBindingNavigatorSaveItem.Text = "Save Data";
             this.refeições_ingredientesBindingNavigatorSaveItem.Click += new System.EventHandler(this.refeições_ingredientesBindingNavigatorSaveItem_Click);
             // 
-            // id_RefeiçõesTextBox
-            // 
-            this.id_RefeiçõesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_ingredientesBindingSource, "Id_Refeições", true));
-            this.id_RefeiçõesTextBox.Location = new System.Drawing.Point(301, 54);
-            this.id_RefeiçõesTextBox.Name = "id_RefeiçõesTextBox";
-            this.id_RefeiçõesTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_RefeiçõesTextBox.TabIndex = 2;
-            // 
-            // id_IngredientesTextBox
-            // 
-            this.id_IngredientesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_ingredientesBindingSource, "Id_Ingredientes", true));
-            this.id_IngredientesTextBox.Location = new System.Drawing.Point(301, 80);
-            this.id_IngredientesTextBox.Name = "id_IngredientesTextBox";
-            this.id_IngredientesTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_IngredientesTextBox.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 258);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Id_Refeições";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(101, 258);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(226, 248);
+            this.button1.Location = new System.Drawing.Point(172, 152);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.DataSource = this.refeiçõesBindingSource;
-            this.listBox1.DisplayMember = "Nome";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(44, 37);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 186);
-            this.listBox1.TabIndex = 8;
-            this.listBox1.ValueMember = "Descrição";
-            // 
-            // refeiçõesBindingSource
-            // 
-            this.refeiçõesBindingSource.DataMember = "Refeições";
-            this.refeiçõesBindingSource.DataSource = this.database1DataSet;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(261, 171);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
-            // 
-            // refeições_ingredientesTableAdapter
-            // 
-            this.refeições_ingredientesTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Clientes1TableAdapter = null;
-            this.tableAdapterManager.ClientesTableAdapter = null;
-            this.tableAdapterManager.EncomendaTableAdapter = null;
-            this.tableAdapterManager.IngredienteTableAdapter = null;
-            this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
-            this.tableAdapterManager.Refeições_ingredientesTableAdapter = this.refeições_ingredientesTableAdapter;
-            this.tableAdapterManager.Refeições1TableAdapter = null;
-            this.tableAdapterManager.RefeiçõesTableAdapter = null;
-            this.tableAdapterManager.TipoTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Projeto.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // refeiçõesTableAdapter
-            // 
-            this.refeiçõesTableAdapter.ClearBeforeFill = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(226, 277);
+            this.button2.Location = new System.Drawing.Point(172, 205);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Sair";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form6
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(55, 152);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.refeições_ingredientesBindingSource;
+            this.listBox1.DisplayMember = "Id_Refeições";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(239, 37);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 9;
+            this.listBox1.ValueMember = "Id_Ingredientes";
+            // 
+            // Form13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 329);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(415, 261);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(id_RefeiçõesLabel);
             this.Controls.Add(this.id_RefeiçõesTextBox);
             this.Controls.Add(id_IngredientesLabel);
             this.Controls.Add(this.id_IngredientesTextBox);
             this.Controls.Add(this.refeições_ingredientesBindingNavigator);
-            this.Name = "Form6";
-            this.Text = "Form6";
-            this.Load += new System.EventHandler(this.Form6_Load);
+            this.Name = "Form13";
+            this.Text = "Form13";
+            this.Load += new System.EventHandler(this.Form13_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingNavigator)).EndInit();
             this.refeições_ingredientesBindingNavigator.ResumeLayout(false);
             this.refeições_ingredientesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refeiçõesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,13 +347,10 @@
         private System.Windows.Forms.ToolStripButton refeições_ingredientesBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox id_RefeiçõesTextBox;
         private System.Windows.Forms.TextBox id_IngredientesTextBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.BindingSource refeiçõesBindingSource;
-        private Database1DataSetTableAdapters.RefeiçõesTableAdapter refeiçõesTableAdapter;
-        private System.Windows.Forms.Button button2;
     }
 }

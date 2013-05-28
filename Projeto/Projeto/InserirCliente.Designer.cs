@@ -41,6 +41,7 @@
             this.clientes1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientes1TableAdapter = new Projeto.Database1DataSetTableAdapters.Clientes1TableAdapter();
             this.tableAdapterManager = new Projeto.Database1DataSetTableAdapters.TableAdapterManager();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientes1BindingSource)).BeginInit();
             this.SuspendLayout();
@@ -135,15 +136,27 @@
             this.tableAdapterManager.IngredienteTableAdapter = null;
             this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
             this.tableAdapterManager.Refeições_ingredientesTableAdapter = null;
+            this.tableAdapterManager.Refeições1TableAdapter = null;
             this.tableAdapterManager.RefeiçõesTableAdapter = null;
             this.tableAdapterManager.TipoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Projeto.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(304, 176);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Sair";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // InserirCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(425, 234);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -176,5 +189,6 @@
         private System.Windows.Forms.BindingSource clientes1BindingSource;
         private Database1DataSetTableAdapters.Clientes1TableAdapter clientes1TableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Button button3;
     }
 }

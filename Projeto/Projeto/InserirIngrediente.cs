@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form4 : Form
+    public partial class InserirIngrediente : Form
     {
-        public Form4()
+        public InserirIngrediente()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Projeto
 
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void InserirIngrediente_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Ingrediente' table. You can move, or remove it, as needed.
             this.ingredienteTableAdapter.Fill(this.database1DataSet.Ingrediente);
@@ -33,12 +33,10 @@ namespace Projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.ingredienteTableAdapter.FillByIngrediente(this.database1DataSet.Ingrediente,textBox1.Text);
-        }
+            this.ingredienteTableAdapter.Insert( this.textBox1.Text);
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+             MessageBox.Show("Inserido com sucesso");
+            
         }
     }
 }

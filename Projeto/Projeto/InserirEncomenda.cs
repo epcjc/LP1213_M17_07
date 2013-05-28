@@ -9,11 +9,19 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form5 : Form
+    public partial class InserirEncomenda : Form
     {
-        public Form5()
+        public InserirEncomenda()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+            this.encomendaTableAdapter.Insert(Convert.ToInt16(this.textBox1.Text), this.dateTimePicker1.Value, Convert.ToDecimal(this.textBox3.Text));
+            MessageBox.Show("Inserido com sucesso");
         }
 
         private void encomendaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -24,21 +32,11 @@ namespace Projeto
 
         }
 
-        private void Form5_Load(object sender, EventArgs e)
+        private void InserirEncomenda_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Encomenda' table. You can move, or remove it, as needed.
             this.encomendaTableAdapter.Fill(this.database1DataSet.Encomenda);
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.encomendaTableAdapter.FillByEncomenda(this.database1DataSet.Encomenda,Convert.ToInt16(textBox1.Text));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

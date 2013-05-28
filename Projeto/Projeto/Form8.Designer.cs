@@ -38,6 +38,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesDataGridView)).BeginInit();
@@ -66,6 +67,7 @@
             this.tableAdapterManager.IngredienteTableAdapter = null;
             this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
             this.tableAdapterManager.Refeições_ingredientesTableAdapter = null;
+            this.tableAdapterManager.Refeições1TableAdapter = null;
             this.tableAdapterManager.RefeiçõesTableAdapter = null;
             this.tableAdapterManager.TipoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Projeto.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -110,11 +112,22 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Telefone";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(407, 249);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(538, 293);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.clientesDataGridView);
             this.Name = "Form8";
             this.Text = "Form8";
@@ -137,5 +150,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Button button1;
     }
 }

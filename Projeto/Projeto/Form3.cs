@@ -38,5 +38,10 @@ namespace Projeto
             this.clientesTableAdapter.FillByCliente(this.database1DataSet.Clientes,textBox1.Text);
              
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

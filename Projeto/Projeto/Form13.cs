@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form6 : Form
+    public partial class Form13 : Form
     {
-        public Form6()
+        public Form13()
         {
             InitializeComponent();
         }
@@ -24,10 +24,8 @@ namespace Projeto
 
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void Form13_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Refeições' table. You can move, or remove it, as needed.
-            this.refeiçõesTableAdapter.Fill(this.database1DataSet.Refeições);
             // TODO: This line of code loads data into the 'database1DataSet.Refeições_ingredientes' table. You can move, or remove it, as needed.
             this.refeições_ingredientesTableAdapter.Fill(this.database1DataSet.Refeições_ingredientes);
 
@@ -35,13 +33,7 @@ namespace Projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.refeições_ingredientesTableAdapter.FillByRefeições_Ingredientes(this.database1DataSet.Refeições_ingredientes,Convert.ToInt16(textBox1.Text));
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+           
         }
     }
 }

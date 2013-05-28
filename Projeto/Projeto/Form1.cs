@@ -35,5 +35,10 @@ namespace Projeto
         {
             this.refeiçõesTableAdapter.FillByNome(this.database1DataSet.Refeições, textBox1.Text);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

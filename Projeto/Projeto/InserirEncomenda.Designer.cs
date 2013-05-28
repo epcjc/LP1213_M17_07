@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form5
+    partial class InserirEncomenda
     {
         /// <summary>
         /// Required designer variable.
@@ -29,81 +29,97 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idLabel;
-            System.Windows.Forms.Label id_ClienteLabel;
-            System.Windows.Forms.Label dataLabel;
-            System.Windows.Forms.Label totalLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InserirEncomenda));
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.database1DataSet = new Projeto.Database1DataSet();
             this.encomendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.encomendaTableAdapter = new Projeto.Database1DataSetTableAdapters.EncomendaTableAdapter();
             this.tableAdapterManager = new Projeto.Database1DataSetTableAdapters.TableAdapterManager();
             this.encomendaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.idTextBox = new System.Windows.Forms.TextBox();
-            this.id_ClienteTextBox = new System.Windows.Forms.TextBox();
-            this.dataDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.totalTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.encomendaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.button2 = new System.Windows.Forms.Button();
-            idLabel = new System.Windows.Forms.Label();
-            id_ClienteLabel = new System.Windows.Forms.Label();
-            dataLabel = new System.Windows.Forms.Label();
-            totalLabel = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.encomendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.encomendaBindingNavigator)).BeginInit();
             this.encomendaBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // idLabel
+            // label1
             // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(21, 49);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 1;
-            idLabel.Text = "Id:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cliente";
             // 
-            // id_ClienteLabel
+            // label2
             // 
-            id_ClienteLabel.AutoSize = true;
-            id_ClienteLabel.Location = new System.Drawing.Point(21, 75);
-            id_ClienteLabel.Name = "id_ClienteLabel";
-            id_ClienteLabel.Size = new System.Drawing.Size(54, 13);
-            id_ClienteLabel.TabIndex = 3;
-            id_ClienteLabel.Text = "Id Cliente:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "data";
             // 
-            // dataLabel
+            // label3
             // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(21, 102);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(33, 13);
-            dataLabel.TabIndex = 5;
-            dataLabel.Text = "Data:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Total";
             // 
-            // totalLabel
+            // button1
             // 
-            totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(21, 127);
-            totalLabel.Name = "totalLabel";
-            totalLabel.Size = new System.Drawing.Size(34, 13);
-            totalLabel.TabIndex = 7;
-            totalLabel.Text = "Total:";
+            this.button1.Location = new System.Drawing.Point(15, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Inserir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(120, 176);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(95, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(95, 123);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 8;
             // 
             // database1DataSet
             // 
@@ -124,7 +140,9 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Clientes1TableAdapter = null;
             this.tableAdapterManager.ClientesTableAdapter = null;
+            this.tableAdapterManager.Encomenda1TableAdapter = null;
             this.tableAdapterManager.EncomendaTableAdapter = this.encomendaTableAdapter;
+            this.tableAdapterManager.Ingrediente1TableAdapter = null;
             this.tableAdapterManager.IngredienteTableAdapter = null;
             this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
             this.tableAdapterManager.Refeições_ingredientesTableAdapter = null;
@@ -159,98 +177,9 @@
             this.encomendaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.encomendaBindingNavigator.Name = "encomendaBindingNavigator";
             this.encomendaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.encomendaBindingNavigator.Size = new System.Drawing.Size(318, 25);
-            this.encomendaBindingNavigator.TabIndex = 0;
+            this.encomendaBindingNavigator.Size = new System.Drawing.Size(360, 25);
+            this.encomendaBindingNavigator.TabIndex = 9;
             this.encomendaBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.encomendaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(81, 46);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(200, 20);
-            this.idTextBox.TabIndex = 2;
-            // 
-            // id_ClienteTextBox
-            // 
-            this.id_ClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.encomendaBindingSource, "Id_Cliente", true));
-            this.id_ClienteTextBox.Location = new System.Drawing.Point(81, 72);
-            this.id_ClienteTextBox.Name = "id_ClienteTextBox";
-            this.id_ClienteTextBox.Size = new System.Drawing.Size(200, 20);
-            this.id_ClienteTextBox.TabIndex = 4;
-            // 
-            // dataDateTimePicker
-            // 
-            this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.encomendaBindingSource, "Data", true));
-            this.dataDateTimePicker.Location = new System.Drawing.Point(81, 98);
-            this.dataDateTimePicker.Name = "dataDateTimePicker";
-            this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dataDateTimePicker.TabIndex = 6;
-            // 
-            // totalTextBox
-            // 
-            this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.encomendaBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(81, 124);
-            this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(200, 20);
-            this.totalTextBox.TabIndex = 8;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(205, 184);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 194);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Encomenda";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(89, 186);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -260,6 +189,13 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -288,6 +224,25 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -306,6 +261,11 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
             // encomendaBindingNavigatorSaveItem
             // 
             this.encomendaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -315,37 +275,31 @@
             this.encomendaBindingNavigatorSaveItem.Text = "Save Data";
             this.encomendaBindingNavigatorSaveItem.Click += new System.EventHandler(this.encomendaBindingNavigatorSaveItem_Click);
             // 
-            // button2
+            // dateTimePicker1
             // 
-            this.button2.Location = new System.Drawing.Point(205, 214);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(95, 82);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(113, 20);
+            this.dateTimePicker1.TabIndex = 10;
             // 
-            // Form5
+            // InserirEncomenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 261);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
-            this.Controls.Add(id_ClienteLabel);
-            this.Controls.Add(this.id_ClienteTextBox);
-            this.Controls.Add(dataLabel);
-            this.Controls.Add(this.dataDateTimePicker);
-            this.Controls.Add(totalLabel);
-            this.Controls.Add(this.totalTextBox);
+            this.ClientSize = new System.Drawing.Size(360, 241);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.encomendaBindingNavigator);
-            this.Name = "Form5";
-            this.Text = "Form5";
-            this.Load += new System.EventHandler(this.Form5_Load);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "InserirEncomenda";
+            this.Text = "InserirEncomenda";
+            this.Load += new System.EventHandler(this.InserirEncomenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.encomendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.encomendaBindingNavigator)).EndInit();
@@ -358,6 +312,13 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
         private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource encomendaBindingSource;
         private Database1DataSetTableAdapters.EncomendaTableAdapter encomendaTableAdapter;
@@ -375,13 +336,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton encomendaBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.TextBox id_ClienteTextBox;
-        private System.Windows.Forms.DateTimePicker dataDateTimePicker;
-        private System.Windows.Forms.TextBox totalTextBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
