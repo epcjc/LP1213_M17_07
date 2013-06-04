@@ -18,7 +18,8 @@ namespace Projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-           Menu frm = new Menu();
+  
+            Menu frm = new Menu();
             frm.ShowDialog();
         }
 

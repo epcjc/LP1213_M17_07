@@ -38,5 +38,10 @@ namespace Projeto
              MessageBox.Show("Inserido com sucesso");
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

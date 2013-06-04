@@ -48,6 +48,8 @@ namespace Projeto {
         
         private Ingrediente1DataTable tableIngrediente1;
         
+        private Refeições_IngredientesNomeDataTable tableRefeições_IngredientesNome;
+        
         private global::System.Data.DataRelation relationFK_Encomenda_Clientes;
         
         private global::System.Data.DataRelation relationFK_Refeições_Tipo;
@@ -75,6 +77,8 @@ namespace Projeto {
         private global::System.Data.DataRelation relationFK_Encomenda_Clientes3;
         
         private global::System.Data.DataRelation relationFK_Refeições_ingredientes_Ingrediente1;
+        
+        private global::System.Data.DataRelation relationRefeições_Refeições_IngredientesNome;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -139,6 +143,9 @@ namespace Projeto {
                 }
                 if ((ds.Tables["Ingrediente1"] != null)) {
                     base.Tables.Add(new Ingrediente1DataTable(ds.Tables["Ingrediente1"]));
+                }
+                if ((ds.Tables["Refeições_IngredientesNome"] != null)) {
+                    base.Tables.Add(new Refeições_IngredientesNomeDataTable(ds.Tables["Refeições_IngredientesNome"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -280,6 +287,16 @@ namespace Projeto {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public Refeições_IngredientesNomeDataTable Refeições_IngredientesNome {
+            get {
+                return this.tableRefeições_IngredientesNome;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -380,6 +397,9 @@ namespace Projeto {
                 }
                 if ((ds.Tables["Ingrediente1"] != null)) {
                     base.Tables.Add(new Ingrediente1DataTable(ds.Tables["Ingrediente1"]));
+                }
+                if ((ds.Tables["Refeições_IngredientesNome"] != null)) {
+                    base.Tables.Add(new Refeições_IngredientesNomeDataTable(ds.Tables["Refeições_IngredientesNome"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -486,6 +506,12 @@ namespace Projeto {
                     this.tableIngrediente1.InitVars();
                 }
             }
+            this.tableRefeições_IngredientesNome = ((Refeições_IngredientesNomeDataTable)(base.Tables["Refeições_IngredientesNome"]));
+            if ((initTable == true)) {
+                if ((this.tableRefeições_IngredientesNome != null)) {
+                    this.tableRefeições_IngredientesNome.InitVars();
+                }
+            }
             this.relationFK_Encomenda_Clientes = this.Relations["FK_Encomenda_Clientes"];
             this.relationFK_Refeições_Tipo = this.Relations["FK_Refeições_Tipo"];
             this.relationFK_Refeições_Encomendadas_Encomenda = this.Relations["FK_Refeições_Encomendadas_Encomenda"];
@@ -500,6 +526,7 @@ namespace Projeto {
             this.relationFK_Encomenda_Clientes2 = this.Relations["FK_Encomenda_Clientes2"];
             this.relationFK_Encomenda_Clientes3 = this.Relations["FK_Encomenda_Clientes3"];
             this.relationFK_Refeições_ingredientes_Ingrediente1 = this.Relations["FK_Refeições_ingredientes_Ingrediente1"];
+            this.relationRefeições_Refeições_IngredientesNome = this.Relations["Refeições_Refeições_IngredientesNome"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -534,6 +561,8 @@ namespace Projeto {
             base.Tables.Add(this.tableEncomenda1);
             this.tableIngrediente1 = new Ingrediente1DataTable();
             base.Tables.Add(this.tableIngrediente1);
+            this.tableRefeições_IngredientesNome = new Refeições_IngredientesNomeDataTable();
+            base.Tables.Add(this.tableRefeições_IngredientesNome);
             this.relationFK_Encomenda_Clientes = new global::System.Data.DataRelation("FK_Encomenda_Clientes", new global::System.Data.DataColumn[] {
                         this.tableClientes.IdColumn}, new global::System.Data.DataColumn[] {
                         this.tableEncomenda.Id_ClienteColumn}, false);
@@ -590,6 +619,10 @@ namespace Projeto {
                         this.tableIngrediente1.Id_IngredienteColumn}, new global::System.Data.DataColumn[] {
                         this.tableRefeições_ingredientes.Id_IngredientesColumn}, false);
             this.Relations.Add(this.relationFK_Refeições_ingredientes_Ingrediente1);
+            this.relationRefeições_Refeições_IngredientesNome = new global::System.Data.DataRelation("Refeições_Refeições_IngredientesNome", new global::System.Data.DataColumn[] {
+                        this.tableRefeições.IdColumn}, new global::System.Data.DataColumn[] {
+                        this.tableRefeições_IngredientesNome.IdColumn}, false);
+            this.Relations.Add(this.relationRefeições_Refeições_IngredientesNome);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -661,6 +694,12 @@ namespace Projeto {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeIngrediente1() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeRefeições_IngredientesNome() {
             return false;
         }
         
@@ -754,6 +793,9 @@ namespace Projeto {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void Ingrediente1RowChangeEventHandler(object sender, Ingrediente1RowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void Refeições_IngredientesNomeRowChangeEventHandler(object sender, Refeições_IngredientesNomeRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4425,6 +4467,300 @@ namespace Projeto {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class Refeições_IngredientesNomeDataTable : global::System.Data.TypedTableBase<Refeições_IngredientesNomeRow> {
+            
+            private global::System.Data.DataColumn columnId;
+            
+            private global::System.Data.DataColumn columnId_Ingredientes;
+            
+            private global::System.Data.DataColumn columnNome;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeDataTable() {
+                this.TableName = "Refeições_IngredientesNome";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal Refeições_IngredientesNomeDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected Refeições_IngredientesNomeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IdColumn {
+                get {
+                    return this.columnId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Id_IngredientesColumn {
+                get {
+                    return this.columnId_Ingredientes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NomeColumn {
+                get {
+                    return this.columnNome;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRow this[int index] {
+                get {
+                    return ((Refeições_IngredientesNomeRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Refeições_IngredientesNomeRowChangeEventHandler Refeições_IngredientesNomeRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Refeições_IngredientesNomeRowChangeEventHandler Refeições_IngredientesNomeRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Refeições_IngredientesNomeRowChangeEventHandler Refeições_IngredientesNomeRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Refeições_IngredientesNomeRowChangeEventHandler Refeições_IngredientesNomeRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddRefeições_IngredientesNomeRow(Refeições_IngredientesNomeRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRow AddRefeições_IngredientesNomeRow(int Id_Ingredientes, string Nome) {
+                Refeições_IngredientesNomeRow rowRefeições_IngredientesNomeRow = ((Refeições_IngredientesNomeRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Id_Ingredientes,
+                        Nome};
+                rowRefeições_IngredientesNomeRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowRefeições_IngredientesNomeRow);
+                return rowRefeições_IngredientesNomeRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRow FindByIdId_Ingredientes(int Id, int Id_Ingredientes) {
+                return ((Refeições_IngredientesNomeRow)(this.Rows.Find(new object[] {
+                            Id,
+                            Id_Ingredientes})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                Refeições_IngredientesNomeDataTable cln = ((Refeições_IngredientesNomeDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new Refeições_IngredientesNomeDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnId = base.Columns["Id"];
+                this.columnId_Ingredientes = base.Columns["Id_Ingredientes"];
+                this.columnNome = base.Columns["Nome"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId);
+                this.columnId_Ingredientes = new global::System.Data.DataColumn("Id_Ingredientes", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Ingredientes);
+                this.columnNome = new global::System.Data.DataColumn("Nome", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNome);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("DataTable2Key1", new global::System.Data.DataColumn[] {
+                                this.columnId,
+                                this.columnId_Ingredientes}, true));
+                this.columnId.AutoIncrement = true;
+                this.columnId.AutoIncrementSeed = -1;
+                this.columnId.AutoIncrementStep = -1;
+                this.columnId.AllowDBNull = false;
+                this.columnId.ReadOnly = true;
+                this.columnId_Ingredientes.AllowDBNull = false;
+                this.columnNome.AllowDBNull = false;
+                this.columnNome.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRow NewRefeições_IngredientesNomeRow() {
+                return ((Refeições_IngredientesNomeRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new Refeições_IngredientesNomeRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(Refeições_IngredientesNomeRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.Refeições_IngredientesNomeRowChanged != null)) {
+                    this.Refeições_IngredientesNomeRowChanged(this, new Refeições_IngredientesNomeRowChangeEvent(((Refeições_IngredientesNomeRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.Refeições_IngredientesNomeRowChanging != null)) {
+                    this.Refeições_IngredientesNomeRowChanging(this, new Refeições_IngredientesNomeRowChangeEvent(((Refeições_IngredientesNomeRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.Refeições_IngredientesNomeRowDeleted != null)) {
+                    this.Refeições_IngredientesNomeRowDeleted(this, new Refeições_IngredientesNomeRowChangeEvent(((Refeições_IngredientesNomeRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.Refeições_IngredientesNomeRowDeleting != null)) {
+                    this.Refeições_IngredientesNomeRowDeleting(this, new Refeições_IngredientesNomeRowChangeEvent(((Refeições_IngredientesNomeRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveRefeições_IngredientesNomeRow(Refeições_IngredientesNomeRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Database1DataSet ds = new Database1DataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "Refeições_IngredientesNomeDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class ClientesRow : global::System.Data.DataRow {
@@ -4789,6 +5125,17 @@ namespace Projeto {
                 }
                 else {
                     return ((Refeições_ingredientesRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Refeições_ingredientes_Refeições"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRow[] GetRefeições_IngredientesNomeRows() {
+                if ((this.Table.ChildRelations["Refeições_Refeições_IngredientesNome"] == null)) {
+                    return new Refeições_IngredientesNomeRow[0];
+                }
+                else {
+                    return ((Refeições_IngredientesNomeRow[])(base.GetChildRows(this.Table.ChildRelations["Refeições_Refeições_IngredientesNome"])));
                 }
             }
         }
@@ -5521,6 +5868,65 @@ namespace Projeto {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class Refeições_IngredientesNomeRow : global::System.Data.DataRow {
+            
+            private Refeições_IngredientesNomeDataTable tableRefeições_IngredientesNome;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal Refeições_IngredientesNomeRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableRefeições_IngredientesNome = ((Refeições_IngredientesNomeDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Id {
+                get {
+                    return ((int)(this[this.tableRefeições_IngredientesNome.IdColumn]));
+                }
+                set {
+                    this[this.tableRefeições_IngredientesNome.IdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Id_Ingredientes {
+                get {
+                    return ((int)(this[this.tableRefeições_IngredientesNome.Id_IngredientesColumn]));
+                }
+                set {
+                    this[this.tableRefeições_IngredientesNome.Id_IngredientesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Nome {
+                get {
+                    return ((string)(this[this.tableRefeições_IngredientesNome.NomeColumn]));
+                }
+                set {
+                    this[this.tableRefeições_IngredientesNome.NomeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public RefeiçõesRow RefeiçõesRow {
+                get {
+                    return ((RefeiçõesRow)(this.GetParentRow(this.Table.ParentRelations["Refeições_Refeições_IngredientesNome"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["Refeições_Refeições_IngredientesNome"]);
+                }
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -5914,6 +6320,40 @@ namespace Projeto {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Ingrediente1Row Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class Refeições_IngredientesNomeRowChangeEvent : global::System.EventArgs {
+            
+            private Refeições_IngredientesNomeRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRowChangeEvent(Refeições_IngredientesNomeRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Refeições_IngredientesNomeRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -9946,6 +10386,178 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class Refeições_IngredientesNomeTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public Refeições_IngredientesNomeTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Refeições_IngredientesNome";
+            tableMapping.ColumnMappings.Add("Id", "Id");
+            tableMapping.ColumnMappings.Add("Id_Ingredientes", "Id_Ingredientes");
+            tableMapping.ColumnMappings.Add("Nome", "Nome");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Projeto.Properties.Settings.Default.Database1ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT        Refeições.Id, Refeições_ingredientes.Id_Ingredientes, Ingrediente.Nome
+FROM            Refeições INNER JOIN
+                         Refeições_ingredientes ON Refeições.Id = Refeições_ingredientes.Id_Refeições INNER JOIN
+                         Ingrediente ON Refeições_ingredientes.Id_Ingredientes = Ingrediente.Id_Ingrediente";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Database1DataSet.Refeições_IngredientesNomeDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Database1DataSet.Refeições_IngredientesNomeDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Database1DataSet.Refeições_IngredientesNomeDataTable dataTable = new Database1DataSet.Refeições_IngredientesNomeDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10295,12 +10907,12 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._refeições1TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Refeições1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._encomendaTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Encomenda.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._refeições1TableAdapter.Update(updatedRows));
+                    result = (result + this._encomendaTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -10313,30 +10925,12 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._ingrediente1TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Ingrediente1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._refeições1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Refeições1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._ingrediente1TableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._encomendaTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Encomenda.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._encomendaTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._ingredienteTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Ingrediente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._ingredienteTableAdapter.Update(updatedRows));
+                    result = (result + this._refeições1TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -10349,12 +10943,21 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._refeições_ingredientesTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Refeições_ingredientes.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._ingredienteTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Ingrediente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._refeições_ingredientesTableAdapter.Update(updatedRows));
+                    result = (result + this._ingredienteTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._ingrediente1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Ingrediente1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._ingrediente1TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -10364,6 +10967,15 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._refeições_EncomendadasTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._refeições_ingredientesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Refeições_ingredientes.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._refeições_ingredientesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -10401,11 +11013,11 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._refeições1TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Refeições1.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._encomendaTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Encomenda.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._refeições1TableAdapter.Update(addedRows));
+                    result = (result + this._encomendaTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10417,27 +11029,11 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._ingrediente1TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Ingrediente1.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._refeições1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Refeições1.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._ingrediente1TableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._encomendaTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Encomenda.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._encomendaTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._ingredienteTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Ingrediente.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._ingredienteTableAdapter.Update(addedRows));
+                    result = (result + this._refeições1TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10449,11 +11045,19 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._refeições_ingredientesTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Refeições_ingredientes.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._ingredienteTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Ingrediente.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._refeições_ingredientesTableAdapter.Update(addedRows));
+                    result = (result + this._ingredienteTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._ingrediente1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Ingrediente1.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._ingrediente1TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10462,6 +11066,14 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._refeições_EncomendadasTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._refeições_ingredientesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Refeições_ingredientes.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._refeições_ingredientesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10475,14 +11087,6 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(Database1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._refeições_EncomendadasTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Refeições_Encomendadas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._refeições_EncomendadasTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._refeições_ingredientesTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Refeições_ingredientes.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -10491,27 +11095,11 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._refeiçõesTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Refeições.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._refeições_EncomendadasTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Refeições_Encomendadas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._refeiçõesTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._ingredienteTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Ingrediente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._ingredienteTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._encomendaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Encomenda.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._encomendaTableAdapter.Update(deletedRows));
+                    result = (result + this._refeições_EncomendadasTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -10523,11 +11111,19 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._encomenda1TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Encomenda1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._ingredienteTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Ingrediente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._encomenda1TableAdapter.Update(deletedRows));
+                    result = (result + this._ingredienteTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._refeiçõesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Refeições.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._refeiçõesTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -10536,6 +11132,22 @@ SELECT Id_Cliente, Data, Total, Id FROM Encomenda WHERE (Id = @Id)";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._refeições1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._encomenda1TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Encomenda1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._encomenda1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._encomendaTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Encomenda.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._encomendaTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

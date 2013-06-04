@@ -49,12 +49,6 @@
             this.efeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refeiçõesIngredienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.inseriToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,12 +60,10 @@
             this.encomendaToolStripMenuItem,
             this.ingredienteToolStripMenuItem,
             this.refeiçõesToolStripMenuItem,
-            this.refeiçõesEncomendadaToolStripMenuItem,
-            this.refeiçõesIngredienteToolStripMenuItem,
-            this.tipoToolStripMenuItem});
+            this.refeiçõesEncomendadaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(639, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(469, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,21 +81,21 @@
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inserirToolStripMenuItem.Text = "Inserir";
             this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
             // pesquizarToolStripMenuItem
             // 
             this.pesquizarToolStripMenuItem.Name = "pesquizarToolStripMenuItem";
-            this.pesquizarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.pesquizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pesquizarToolStripMenuItem.Text = "Pesquisar";
             this.pesquizarToolStripMenuItem.Click += new System.EventHandler(this.pesquizarToolStripMenuItem_Click);
             // 
@@ -232,55 +224,9 @@
             this.dataEntregaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.dataEntregaToolStripMenuItem.Text = "Data_Entrega";
             // 
-            // refeiçõesIngredienteToolStripMenuItem
-            // 
-            this.refeiçõesIngredienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listarToolStripMenuItem5,
-            this.inseriToolStripMenuItem1,
-            this.pesquisarToolStripMenuItem});
-            this.refeiçõesIngredienteToolStripMenuItem.Name = "refeiçõesIngredienteToolStripMenuItem";
-            this.refeiçõesIngredienteToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
-            this.refeiçõesIngredienteToolStripMenuItem.Text = "Refeições_Ingrediente";
-            this.refeiçõesIngredienteToolStripMenuItem.Click += new System.EventHandler(this.refeiçõesIngredienteToolStripMenuItem_Click);
-            // 
-            // listarToolStripMenuItem5
-            // 
-            this.listarToolStripMenuItem5.Name = "listarToolStripMenuItem5";
-            this.listarToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
-            this.listarToolStripMenuItem5.Text = "Listar";
-            this.listarToolStripMenuItem5.Click += new System.EventHandler(this.listarToolStripMenuItem5_Click);
-            // 
-            // inseriToolStripMenuItem1
-            // 
-            this.inseriToolStripMenuItem1.Name = "inseriToolStripMenuItem1";
-            this.inseriToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.inseriToolStripMenuItem1.Text = "Inserir";
-            this.inseriToolStripMenuItem1.Click += new System.EventHandler(this.inseriToolStripMenuItem1_Click);
-            // 
-            // pesquisarToolStripMenuItem
-            // 
-            this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pesquisarToolStripMenuItem.Text = "Pesquisar";
-            this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
-            // 
-            // tipoToolStripMenuItem
-            // 
-            this.tipoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem3});
-            this.tipoToolStripMenuItem.Name = "tipoToolStripMenuItem";
-            this.tipoToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.tipoToolStripMenuItem.Text = "Tipo";
-            // 
-            // inserirToolStripMenuItem3
-            // 
-            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
-            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(106, 22);
-            this.inserirToolStripMenuItem3.Text = "Inserir";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(538, 281);
+            this.button1.Location = new System.Drawing.Point(382, 237);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -292,9 +238,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Projeto.Properties.Resources.cantina1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(639, 340);
+            this.ClientSize = new System.Drawing.Size(469, 272);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -331,12 +276,6 @@
         private System.Windows.Forms.ToolStripMenuItem efeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem dataEntregaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem refeiçõesIngredienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem inseriToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tipoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
         private System.Windows.Forms.Button button1;
 
 

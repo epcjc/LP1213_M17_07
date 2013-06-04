@@ -55,6 +55,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.encomendaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.encomendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.encomendaBindingNavigator)).BeginInit();
@@ -283,11 +284,22 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(113, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(233, 176);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Sair";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // InserirEncomenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 241);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.encomendaBindingNavigator);
             this.Controls.Add(this.textBox3);
@@ -337,5 +349,6 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton encomendaBindingNavigatorSaveItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button3;
     }
 }

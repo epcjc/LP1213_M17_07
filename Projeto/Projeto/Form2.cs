@@ -66,7 +66,7 @@ namespace Projeto
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 

@@ -80,8 +80,7 @@ namespace Projeto
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form13 frm = new Form13();
-            frm.ShowDialog();
+           
         }
 
         private void ingredienteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,8 +108,7 @@ namespace Projeto
 
         private void listarToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            Form7 frm = new Form7();
-            frm.ShowDialog();
+           
         }
 
         private void listarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -139,8 +137,7 @@ namespace Projeto
 
         private void inseriToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form12 frm = new Form12();
-            frm.ShowDialog();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
