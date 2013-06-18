@@ -142,7 +142,7 @@ namespace Projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-          Application.Exit();
+            this.Close();
         }
 
         private void encomendaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -153,6 +153,40 @@ namespace Projeto
         private void refeiçõesIngredienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void refeiçõesEncomendadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void efeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Encomendas frm = new Encomendas();
+            frm.ShowDialog();
+        }
+
+        private void relatórioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Relatório frm = new Relatório();
+            frm.ShowDialog();
+        }
+
+        private void relatorioaula7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void realatórioAula7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatóriaAula7 frm = new RelatóriaAula7();
+            frm.ShowDialog();
+        }
+
+        private void forms7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Form7 frm = new Form7();
+            frm.ShowDialog();
         }
         }
     }

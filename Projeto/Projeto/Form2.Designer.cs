@@ -49,11 +49,15 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.refeições_ingredientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.refeições_ingredientesTableAdapter = new Projeto.Database1DataSetTableAdapters.Refeições_ingredientesTableAdapter();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refeiçõesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingredienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -105,8 +109,10 @@
             // 
             // textBox1
             // 
+            this.helpProvider1.SetHelpString(this.textBox1, "Introduza o Nome");
             this.textBox1.Location = new System.Drawing.Point(89, 31);
             this.textBox1.Name = "textBox1";
+            this.helpProvider1.SetShowHelp(this.textBox1, true);
             this.textBox1.Size = new System.Drawing.Size(130, 20);
             this.textBox1.TabIndex = 5;
             // 
@@ -212,6 +218,10 @@
             // 
             this.refeições_ingredientesTableAdapter.ClearBeforeFill = true;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,14 +239,23 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.HelpButton = true;
+            this.helpProvider1.SetHelpString(this, "Inserir Nome");
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Form2";
+            this.toolTip1.SetToolTip(this, "Nome");
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.Validating += new System.ComponentModel.CancelEventHandler(this.Form2_Validating);
+            this.Validated += new System.EventHandler(this.Form2_Validated);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refeiçõesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingredienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refeições_ingredientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +283,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.BindingSource refeições_ingredientesBindingSource;
         private Database1DataSetTableAdapters.Refeições_ingredientesTableAdapter refeições_ingredientesTableAdapter;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

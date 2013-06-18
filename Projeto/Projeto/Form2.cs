@@ -68,6 +68,19 @@ namespace Projeto
         {
             this.Close();
         }
+
+        private void Form2_Validated(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Form2_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.textBox3.Text == "")
+            {
+                errorProvider1.SetError(this.textBox3, "não pode ser vazio");
+            }
+        }
     }
 
 }
