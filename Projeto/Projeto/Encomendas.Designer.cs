@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Encomendas));
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label id_RefeiçãoLabel;
             System.Windows.Forms.Label quantidadeLabel;
             System.Windows.Forms.Label preço_RefeiçãoLabel;
             System.Windows.Forms.Label subtotalLabel;
             System.Windows.Forms.Label id_EncomendaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Encomendas));
             this.database1DataSet = new Projeto.Database1DataSet();
             this.refeições_EncomendadasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.refeições_EncomendadasTableAdapter = new Projeto.Database1DataSetTableAdapters.Refeições_EncomendadasTableAdapter();
@@ -78,6 +78,72 @@
             this.refeições_EncomendadasBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refeições_EncomendadasDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.BackColor = System.Drawing.Color.Gainsboro;
+            idLabel.ForeColor = System.Drawing.Color.Black;
+            idLabel.Location = new System.Drawing.Point(9, 276);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 2;
+            idLabel.Text = "Id:";
+            // 
+            // id_RefeiçãoLabel
+            // 
+            id_RefeiçãoLabel.AutoSize = true;
+            id_RefeiçãoLabel.BackColor = System.Drawing.Color.Gainsboro;
+            id_RefeiçãoLabel.ForeColor = System.Drawing.Color.Black;
+            id_RefeiçãoLabel.Location = new System.Drawing.Point(9, 302);
+            id_RefeiçãoLabel.Name = "id_RefeiçãoLabel";
+            id_RefeiçãoLabel.Size = new System.Drawing.Size(65, 13);
+            id_RefeiçãoLabel.TabIndex = 4;
+            id_RefeiçãoLabel.Text = "Id Refeição:";
+            // 
+            // quantidadeLabel
+            // 
+            quantidadeLabel.AutoSize = true;
+            quantidadeLabel.BackColor = System.Drawing.Color.Gainsboro;
+            quantidadeLabel.ForeColor = System.Drawing.Color.Black;
+            quantidadeLabel.Location = new System.Drawing.Point(9, 328);
+            quantidadeLabel.Name = "quantidadeLabel";
+            quantidadeLabel.Size = new System.Drawing.Size(65, 13);
+            quantidadeLabel.TabIndex = 6;
+            quantidadeLabel.Text = "Quantidade:";
+            // 
+            // preço_RefeiçãoLabel
+            // 
+            preço_RefeiçãoLabel.AutoSize = true;
+            preço_RefeiçãoLabel.BackColor = System.Drawing.Color.Gainsboro;
+            preço_RefeiçãoLabel.ForeColor = System.Drawing.Color.Black;
+            preço_RefeiçãoLabel.Location = new System.Drawing.Point(9, 354);
+            preço_RefeiçãoLabel.Name = "preço_RefeiçãoLabel";
+            preço_RefeiçãoLabel.Size = new System.Drawing.Size(84, 13);
+            preço_RefeiçãoLabel.TabIndex = 8;
+            preço_RefeiçãoLabel.Text = "Preço Refeição:";
+            // 
+            // subtotalLabel
+            // 
+            subtotalLabel.AutoSize = true;
+            subtotalLabel.BackColor = System.Drawing.Color.Gainsboro;
+            subtotalLabel.ForeColor = System.Drawing.Color.Black;
+            subtotalLabel.Location = new System.Drawing.Point(9, 380);
+            subtotalLabel.Name = "subtotalLabel";
+            subtotalLabel.Size = new System.Drawing.Size(49, 13);
+            subtotalLabel.TabIndex = 10;
+            subtotalLabel.Text = "Subtotal:";
+            // 
+            // id_EncomendaLabel
+            // 
+            id_EncomendaLabel.AutoSize = true;
+            id_EncomendaLabel.BackColor = System.Drawing.Color.Gainsboro;
+            id_EncomendaLabel.ForeColor = System.Drawing.Color.Black;
+            id_EncomendaLabel.Location = new System.Drawing.Point(9, 406);
+            id_EncomendaLabel.Name = "id_EncomendaLabel";
+            id_EncomendaLabel.Size = new System.Drawing.Size(79, 13);
+            id_EncomendaLabel.TabIndex = 12;
+            id_EncomendaLabel.Text = "Id Encomenda:";
             // 
             // database1DataSet
             // 
@@ -236,6 +302,7 @@
             // refeições_EncomendadasDataGridView
             // 
             this.refeições_EncomendadasDataGridView.AutoGenerateColumns = false;
+            this.refeições_EncomendadasDataGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.refeições_EncomendadasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.refeições_EncomendadasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -287,103 +354,61 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Id_Encomenda";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(9, 276);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 2;
-            idLabel.Text = "Id:";
-            // 
             // idTextBox
             // 
+            this.idTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_EncomendadasBindingSource, "Id", true));
+            this.idTextBox.ForeColor = System.Drawing.Color.Black;
             this.idTextBox.Location = new System.Drawing.Point(99, 273);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTextBox.TabIndex = 3;
             // 
-            // id_RefeiçãoLabel
-            // 
-            id_RefeiçãoLabel.AutoSize = true;
-            id_RefeiçãoLabel.Location = new System.Drawing.Point(9, 302);
-            id_RefeiçãoLabel.Name = "id_RefeiçãoLabel";
-            id_RefeiçãoLabel.Size = new System.Drawing.Size(65, 13);
-            id_RefeiçãoLabel.TabIndex = 4;
-            id_RefeiçãoLabel.Text = "Id Refeição:";
-            // 
             // id_RefeiçãoTextBox
             // 
+            this.id_RefeiçãoTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.id_RefeiçãoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_EncomendadasBindingSource, "Id_Refeição", true));
+            this.id_RefeiçãoTextBox.ForeColor = System.Drawing.Color.Black;
             this.id_RefeiçãoTextBox.Location = new System.Drawing.Point(99, 299);
             this.id_RefeiçãoTextBox.Name = "id_RefeiçãoTextBox";
             this.id_RefeiçãoTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_RefeiçãoTextBox.TabIndex = 5;
             // 
-            // quantidadeLabel
-            // 
-            quantidadeLabel.AutoSize = true;
-            quantidadeLabel.Location = new System.Drawing.Point(9, 328);
-            quantidadeLabel.Name = "quantidadeLabel";
-            quantidadeLabel.Size = new System.Drawing.Size(65, 13);
-            quantidadeLabel.TabIndex = 6;
-            quantidadeLabel.Text = "Quantidade:";
-            // 
             // quantidadeTextBox
             // 
+            this.quantidadeTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.quantidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_EncomendadasBindingSource, "Quantidade", true));
+            this.quantidadeTextBox.ForeColor = System.Drawing.Color.Black;
             this.quantidadeTextBox.Location = new System.Drawing.Point(99, 325);
             this.quantidadeTextBox.Name = "quantidadeTextBox";
             this.quantidadeTextBox.Size = new System.Drawing.Size(100, 20);
             this.quantidadeTextBox.TabIndex = 7;
             // 
-            // preço_RefeiçãoLabel
-            // 
-            preço_RefeiçãoLabel.AutoSize = true;
-            preço_RefeiçãoLabel.Location = new System.Drawing.Point(9, 354);
-            preço_RefeiçãoLabel.Name = "preço_RefeiçãoLabel";
-            preço_RefeiçãoLabel.Size = new System.Drawing.Size(84, 13);
-            preço_RefeiçãoLabel.TabIndex = 8;
-            preço_RefeiçãoLabel.Text = "Preço Refeição:";
-            // 
             // preço_RefeiçãoTextBox
             // 
+            this.preço_RefeiçãoTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.preço_RefeiçãoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_EncomendadasBindingSource, "Preço_Refeição", true));
+            this.preço_RefeiçãoTextBox.ForeColor = System.Drawing.Color.Black;
             this.preço_RefeiçãoTextBox.Location = new System.Drawing.Point(99, 351);
             this.preço_RefeiçãoTextBox.Name = "preço_RefeiçãoTextBox";
             this.preço_RefeiçãoTextBox.Size = new System.Drawing.Size(100, 20);
             this.preço_RefeiçãoTextBox.TabIndex = 9;
             // 
-            // subtotalLabel
-            // 
-            subtotalLabel.AutoSize = true;
-            subtotalLabel.Location = new System.Drawing.Point(9, 380);
-            subtotalLabel.Name = "subtotalLabel";
-            subtotalLabel.Size = new System.Drawing.Size(49, 13);
-            subtotalLabel.TabIndex = 10;
-            subtotalLabel.Text = "Subtotal:";
-            // 
             // subtotalTextBox
             // 
+            this.subtotalTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.subtotalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_EncomendadasBindingSource, "Subtotal", true));
+            this.subtotalTextBox.ForeColor = System.Drawing.Color.Black;
             this.subtotalTextBox.Location = new System.Drawing.Point(99, 377);
             this.subtotalTextBox.Name = "subtotalTextBox";
             this.subtotalTextBox.Size = new System.Drawing.Size(100, 20);
             this.subtotalTextBox.TabIndex = 11;
             // 
-            // id_EncomendaLabel
-            // 
-            id_EncomendaLabel.AutoSize = true;
-            id_EncomendaLabel.Location = new System.Drawing.Point(9, 406);
-            id_EncomendaLabel.Name = "id_EncomendaLabel";
-            id_EncomendaLabel.Size = new System.Drawing.Size(79, 13);
-            id_EncomendaLabel.TabIndex = 12;
-            id_EncomendaLabel.Text = "Id Encomenda:";
-            // 
             // id_EncomendaTextBox
             // 
+            this.id_EncomendaTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.id_EncomendaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.refeições_EncomendadasBindingSource, "Id_Encomenda", true));
+            this.id_EncomendaTextBox.ForeColor = System.Drawing.Color.Black;
             this.id_EncomendaTextBox.Location = new System.Drawing.Point(99, 403);
             this.id_EncomendaTextBox.Name = "id_EncomendaTextBox";
             this.id_EncomendaTextBox.Size = new System.Drawing.Size(100, 20);
@@ -393,6 +418,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(674, 488);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);

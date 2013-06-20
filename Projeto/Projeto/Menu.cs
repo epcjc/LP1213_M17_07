@@ -188,6 +188,18 @@ namespace Projeto
            Form7 frm = new Form7();
             frm.ShowDialog();
         }
+
+        private void relatorio1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Relatorio1 frm = new Relatorio1();
+            frm.ShowDialog();
+        }
+
+        private void relatorio2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Relatorio2 frm = new Relatorio2();
+            frm.ShowDialog();
+        }
         }
     }
 

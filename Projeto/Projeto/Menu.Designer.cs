@@ -49,11 +49,13 @@
             this.efeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorioaula7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realatórioAula7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.forms7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.relatorio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatorio2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,21 +89,21 @@
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.inserirToolStripMenuItem.Text = "Inserir";
             this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
             // pesquizarToolStripMenuItem
             // 
             this.pesquizarToolStripMenuItem.Name = "pesquizarToolStripMenuItem";
-            this.pesquizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pesquizarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.pesquizarToolStripMenuItem.Text = "Pesquisar";
             this.pesquizarToolStripMenuItem.Click += new System.EventHandler(this.pesquizarToolStripMenuItem_Click);
             // 
@@ -151,21 +153,21 @@
             // inserirToolStripMenuItem1
             // 
             this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.inserirToolStripMenuItem1.Text = "Inserir";
             this.inserirToolStripMenuItem1.Click += new System.EventHandler(this.inserirToolStripMenuItem1_Click);
             // 
             // listarToolStripMenuItem2
             // 
             this.listarToolStripMenuItem2.Name = "listarToolStripMenuItem2";
-            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.listarToolStripMenuItem2.Text = "Listar";
             this.listarToolStripMenuItem2.Click += new System.EventHandler(this.listarToolStripMenuItem2_Click);
             // 
             // pesquisrToolStripMenuItem
             // 
             this.pesquisrToolStripMenuItem.Name = "pesquisrToolStripMenuItem";
-            this.pesquisrToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pesquisrToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.pesquisrToolStripMenuItem.Text = "Pesquisar";
             this.pesquisrToolStripMenuItem.Click += new System.EventHandler(this.pesquisrToolStripMenuItem_Click);
             // 
@@ -232,22 +234,14 @@
             this.dataEntregaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.dataEntregaToolStripMenuItem.Text = "Data_Entrega";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(382, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // relatórioToolStripMenuItem
             // 
             this.relatórioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.relatorioaula7ToolStripMenuItem,
             this.realatórioAula7ToolStripMenuItem,
-            this.forms7ToolStripMenuItem});
+            this.forms7ToolStripMenuItem,
+            this.relatorio1ToolStripMenuItem,
+            this.relatorio2ToolStripMenuItem});
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
             this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.relatórioToolStripMenuItem.Text = "Relatório";
@@ -273,6 +267,30 @@
             this.forms7ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.forms7ToolStripMenuItem.Text = "Forms7";
             this.forms7ToolStripMenuItem.Click += new System.EventHandler(this.forms7ToolStripMenuItem_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(382, 237);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // relatorio1ToolStripMenuItem
+            // 
+            this.relatorio1ToolStripMenuItem.Name = "relatorio1ToolStripMenuItem";
+            this.relatorio1ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.relatorio1ToolStripMenuItem.Text = "Relatorio1";
+            this.relatorio1ToolStripMenuItem.Click += new System.EventHandler(this.relatorio1ToolStripMenuItem_Click);
+            // 
+            // relatorio2ToolStripMenuItem
+            // 
+            this.relatorio2ToolStripMenuItem.Name = "relatorio2ToolStripMenuItem";
+            this.relatorio2ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.relatorio2ToolStripMenuItem.Text = "Relatorio2";
+            this.relatorio2ToolStripMenuItem.Click += new System.EventHandler(this.relatorio2ToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -323,6 +341,8 @@
         private System.Windows.Forms.ToolStripMenuItem relatorioaula7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realatórioAula7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem forms7ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatorio1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatorio2ToolStripMenuItem;
 
 
     }
