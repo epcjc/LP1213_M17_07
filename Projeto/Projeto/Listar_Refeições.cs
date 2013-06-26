@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Relatorio2 : Form
+    public partial class Listar_Refeições : Form
     {
-        public Relatorio2()
+        public Listar_Refeições()
         {
             InitializeComponent();
         }

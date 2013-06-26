@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form1
+    partial class Pesquisar_refeições1
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             System.Windows.Forms.Label descriçãoLabel;
             System.Windows.Forms.Label preçoLabel;
             System.Windows.Forms.Label id_tipoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesquisar_refeições1));
             this.refeiçõesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.refeiçõesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,6 +63,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.helpProvider2 = new System.Windows.Forms.HelpProvider();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientesTableAdapter = new Projeto.Database1DataSetTableAdapters.ClientesTableAdapter();
             idLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
             descriçãoLabel = new System.Windows.Forms.Label();
@@ -72,6 +74,7 @@
             this.refeiçõesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refeiçõesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // idLabel
@@ -145,7 +148,7 @@
             this.refeiçõesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.refeiçõesBindingNavigator.Name = "refeiçõesBindingNavigator";
             this.refeiçõesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.refeiçõesBindingNavigator.Size = new System.Drawing.Size(442, 25);
+            this.refeiçõesBindingNavigator.Size = new System.Drawing.Size(593, 25);
             this.refeiçõesBindingNavigator.TabIndex = 0;
             this.refeiçõesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -352,11 +355,20 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.database1DataSet;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 334);
+            this.ClientSize = new System.Drawing.Size(593, 334);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -383,6 +395,7 @@
             this.refeiçõesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refeiçõesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,6 +431,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.HelpProvider helpProvider2;
+        private System.Windows.Forms.BindingSource clientesBindingSource;
+        private Database1DataSetTableAdapters.ClientesTableAdapter clientesTableAdapter;
     }
 }
 

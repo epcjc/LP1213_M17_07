@@ -18,7 +18,7 @@ namespace Projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this,"Leila.hnd");
+            Help.ShowHelp(this,"Realtório.chm");
         }
     }
 }

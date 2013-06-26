@@ -50,31 +50,31 @@ namespace Projeto
 
         private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Form2 frm = new Form2();
+            InserirEmDuasForm frm = new InserirEmDuasForm();
             frm.ShowDialog();
         }
 
         private void pesquisrToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            Pesquisar_refeições1 frm = new Pesquisar_refeições1();
             frm.ShowDialog();
         }
 
         private void pesquizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3();
+            Pesquisar_Cliente frm = new Pesquisar_Cliente();
             frm.ShowDialog();
         }
 
         private void pesquisrToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 frm = new Form4();
+            Pesquisar_Ingrediete frm = new Pesquisar_Ingrediete();
             frm.ShowDialog();
         }
 
         private void pesquizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form5 frm = new Form5();
+            Pesquizar frm = new Pesquizar();
             frm.ShowDialog();
         }
 
@@ -96,7 +96,7 @@ namespace Projeto
 
         private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Form6 frm = new Form6();
+            PesquisarRefeições frm = new PesquisarRefeições();
             frm.ShowDialog();
         }
 
@@ -113,19 +113,19 @@ namespace Projeto
 
         private void listarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form8 frm = new Form8();
+            Listar_Clientes frm = new Listar_Clientes();
             frm.ShowDialog();
         }
 
         private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form9 frm = new Form9();
+            Listar_Tipo frm = new Listar_Tipo();
             frm.ShowDialog();
         }
 
         private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Form10 frm = new Form10();
+            ListarIngridente frm = new ListarIngridente();
             frm.ShowDialog();
         }
 
@@ -168,8 +168,8 @@ namespace Projeto
 
         private void relatórioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Relatório frm = new Relatório();
-            frm.ShowDialog();
+            //Relatório frm = new Relatório();
+            //frm.ShowDialog();
         }
 
         private void relatorioaula7ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -185,19 +185,31 @@ namespace Projeto
 
         private void forms7ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Form7 frm = new Form7();
+           Errorprovider frm = new Errorprovider();
             frm.ShowDialog();
         }
 
         private void relatorio1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Relatorio1 frm = new Relatorio1();
+           Listar_Ingredientes frm = new Listar_Ingredientes();
             frm.ShowDialog();
         }
 
         private void relatorio2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Relatorio2 frm = new Relatorio2();
+            Listar_Refeições frm = new Listar_Refeições();
+            frm.ShowDialog();
+        }
+
+        private void totalIngredientesCadaRefeicaoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Total_Ingredientes_Cada_Refeicao frm = new Total_Ingredientes_Cada_Refeicao();
+            frm.ShowDialog();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
             frm.ShowDialog();
         }
         }

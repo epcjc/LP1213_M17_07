@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form6
+    partial class PesquisarRefeições
     {
         /// <summary>
         /// Required designer variable.

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form7 : Form
+    public partial class Errorprovider : Form
     {
-        public Form7()
+        public Errorprovider()
         {
             InitializeComponent();
         }

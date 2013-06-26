@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form2
+    partial class InserirEmDuasForm
     {
         /// <summary>
         /// Required designer variable.

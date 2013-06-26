@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form3
+    partial class Pesquisar_Ingrediete
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label id_IngredienteLabel;
             System.Windows.Forms.Label nomeLabel;
-            System.Windows.Forms.Label moradaLabel;
-            System.Windows.Forms.Label telefoneLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesquisar_Ingrediete));
             this.database1DataSet = new Projeto.Database1DataSet();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter = new Projeto.Database1DataSetTableAdapters.ClientesTableAdapter();
+            this.ingredienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ingredienteTableAdapter = new Projeto.Database1DataSetTableAdapters.IngredienteTableAdapter();
             this.tableAdapterManager = new Projeto.Database1DataSetTableAdapters.TableAdapterManager();
-            this.clientesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.ingredienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -50,89 +48,63 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.clientesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.ingredienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.id_IngredienteTextBox = new System.Windows.Forms.TextBox();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
-            this.moradaTextBox = new System.Windows.Forms.TextBox();
-            this.telefoneTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.clientes1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientes1TableAdapter = new Projeto.Database1DataSetTableAdapters.Clientes1TableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.helpProvider2 = new System.Windows.Forms.HelpProvider();
-            idLabel = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            id_IngredienteLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
-            moradaLabel = new System.Windows.Forms.Label();
-            telefoneLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingNavigator)).BeginInit();
-            this.clientesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clientes1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingredienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingredienteBindingNavigator)).BeginInit();
+            this.ingredienteBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // idLabel
+            // id_IngredienteLabel
             // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(30, 54);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 1;
-            idLabel.Text = "Id:";
+            id_IngredienteLabel.AutoSize = true;
+            id_IngredienteLabel.Location = new System.Drawing.Point(12, 53);
+            id_IngredienteLabel.Name = "id_IngredienteLabel";
+            id_IngredienteLabel.Size = new System.Drawing.Size(75, 13);
+            id_IngredienteLabel.TabIndex = 1;
+            id_IngredienteLabel.Text = "Id Ingrediente:";
             // 
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(30, 80);
+            nomeLabel.Location = new System.Drawing.Point(12, 79);
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(38, 13);
             nomeLabel.TabIndex = 3;
             nomeLabel.Text = "Nome:";
-            // 
-            // moradaLabel
-            // 
-            moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(30, 106);
-            moradaLabel.Name = "moradaLabel";
-            moradaLabel.Size = new System.Drawing.Size(46, 13);
-            moradaLabel.TabIndex = 5;
-            moradaLabel.Text = "Morada:";
-            // 
-            // telefoneLabel
-            // 
-            telefoneLabel.AutoSize = true;
-            telefoneLabel.Location = new System.Drawing.Point(30, 132);
-            telefoneLabel.Name = "telefoneLabel";
-            telefoneLabel.Size = new System.Drawing.Size(52, 13);
-            telefoneLabel.TabIndex = 7;
-            telefoneLabel.Text = "Telefone:";
             // 
             // database1DataSet
             // 
             this.database1DataSet.DataSetName = "Database1DataSet";
             this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // clientesBindingSource
+            // ingredienteBindingSource
             // 
-            this.clientesBindingSource.DataMember = "Clientes";
-            this.clientesBindingSource.DataSource = this.database1DataSet;
+            this.ingredienteBindingSource.DataMember = "Ingrediente";
+            this.ingredienteBindingSource.DataSource = this.database1DataSet;
             // 
-            // clientesTableAdapter
+            // ingredienteTableAdapter
             // 
-            this.clientesTableAdapter.ClearBeforeFill = true;
+            this.ingredienteTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Clientes1TableAdapter = null;
-            this.tableAdapterManager.ClientesTableAdapter = this.clientesTableAdapter;
+            this.tableAdapterManager.ClientesTableAdapter = null;
             this.tableAdapterManager.Encomenda1TableAdapter = null;
             this.tableAdapterManager.EncomendaTableAdapter = null;
             this.tableAdapterManager.Ingrediente1TableAdapter = null;
-            this.tableAdapterManager.IngredienteTableAdapter = null;
+            this.tableAdapterManager.IngredienteTableAdapter = this.ingredienteTableAdapter;
             this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
             this.tableAdapterManager.Refeições_ingredientesTableAdapter = null;
             this.tableAdapterManager.Refeições1TableAdapter = null;
@@ -140,13 +112,13 @@
             this.tableAdapterManager.TipoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Projeto.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // clientesBindingNavigator
+            // ingredienteBindingNavigator
             // 
-            this.clientesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.clientesBindingNavigator.BindingSource = this.clientesBindingSource;
-            this.clientesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.clientesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.clientesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingredienteBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.ingredienteBindingNavigator.BindingSource = this.ingredienteBindingSource;
+            this.ingredienteBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.ingredienteBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.ingredienteBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -158,17 +130,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.clientesBindingNavigatorSaveItem});
-            this.clientesBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.clientesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.clientesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.clientesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.clientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.clientesBindingNavigator.Name = "clientesBindingNavigator";
-            this.clientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clientesBindingNavigator.Size = new System.Drawing.Size(327, 25);
-            this.clientesBindingNavigator.TabIndex = 0;
-            this.clientesBindingNavigator.Text = "bindingNavigator1";
+            this.ingredienteBindingNavigatorSaveItem});
+            this.ingredienteBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.ingredienteBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.ingredienteBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.ingredienteBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.ingredienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.ingredienteBindingNavigator.Name = "ingredienteBindingNavigator";
+            this.ingredienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.ingredienteBindingNavigator.Size = new System.Drawing.Size(284, 25);
+            this.ingredienteBindingNavigator.TabIndex = 0;
+            this.ingredienteBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -255,124 +227,90 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // clientesBindingNavigatorSaveItem
+            // ingredienteBindingNavigatorSaveItem
             // 
-            this.clientesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.clientesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorSaveItem.Image")));
-            this.clientesBindingNavigatorSaveItem.Name = "clientesBindingNavigatorSaveItem";
-            this.clientesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.clientesBindingNavigatorSaveItem.Text = "Save Data";
-            this.clientesBindingNavigatorSaveItem.Click += new System.EventHandler(this.clientesBindingNavigatorSaveItem_Click);
+            this.ingredienteBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ingredienteBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("ingredienteBindingNavigatorSaveItem.Image")));
+            this.ingredienteBindingNavigatorSaveItem.Name = "ingredienteBindingNavigatorSaveItem";
+            this.ingredienteBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.ingredienteBindingNavigatorSaveItem.Text = "Save Data";
+            this.ingredienteBindingNavigatorSaveItem.Click += new System.EventHandler(this.ingredienteBindingNavigatorSaveItem_Click);
             // 
-            // idTextBox
+            // id_IngredienteTextBox
             // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(88, 51);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 2;
+            this.id_IngredienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingredienteBindingSource, "Id_Ingrediente", true));
+            this.id_IngredienteTextBox.Location = new System.Drawing.Point(93, 50);
+            this.id_IngredienteTextBox.Name = "id_IngredienteTextBox";
+            this.id_IngredienteTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_IngredienteTextBox.TabIndex = 2;
             // 
             // nomeTextBox
             // 
-            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(88, 77);
+            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingredienteBindingSource, "Nome", true));
+            this.nomeTextBox.Location = new System.Drawing.Point(93, 76);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
             this.nomeTextBox.TabIndex = 4;
             // 
-            // moradaTextBox
-            // 
-            this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(88, 103);
-            this.moradaTextBox.Name = "moradaTextBox";
-            this.moradaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.moradaTextBox.TabIndex = 6;
-            // 
-            // telefoneTextBox
-            // 
-            this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "Telefone", true));
-            this.telefoneTextBox.Location = new System.Drawing.Point(88, 129);
-            this.telefoneTextBox.Name = "telefoneTextBox";
-            this.telefoneTextBox.Size = new System.Drawing.Size(100, 20);
-            this.telefoneTextBox.TabIndex = 8;
-            // 
             // label1
             // 
+            this.label1.AccessibleName = "ToolTipe";
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 169);
+            this.label1.Location = new System.Drawing.Point(13, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Nome_Cliente";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Ingrediente";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(93, 125);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(203, 169);
+            this.button1.Location = new System.Drawing.Point(199, 125);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
-            // 
-            this.helpProvider1.SetHelpString(this.textBox1, "Introduza Nome do Cliente");
-            this.textBox1.Location = new System.Drawing.Point(97, 166);
-            this.textBox1.Name = "textBox1";
-            this.helpProvider1.SetShowHelp(this.textBox1, true);
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
-            // 
-            // clientes1BindingSource
-            // 
-            this.clientes1BindingSource.DataMember = "Clientes1";
-            this.clientes1BindingSource.DataSource = this.database1DataSet;
-            // 
-            // clientes1TableAdapter
-            // 
-            this.clientes1TableAdapter.ClearBeforeFill = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(227, 220);
+            this.button2.Location = new System.Drawing.Point(199, 167);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Sair";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form3
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 261);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
+            this.Controls.Add(id_IngredienteLabel);
+            this.Controls.Add(this.id_IngredienteTextBox);
             this.Controls.Add(nomeLabel);
             this.Controls.Add(this.nomeTextBox);
-            this.Controls.Add(moradaLabel);
-            this.Controls.Add(this.moradaTextBox);
-            this.Controls.Add(telefoneLabel);
-            this.Controls.Add(this.telefoneTextBox);
-            this.Controls.Add(this.clientesBindingNavigator);
-            this.HelpButton = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.Controls.Add(this.ingredienteBindingNavigator);
+            this.Name = "Form4";
+            this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingNavigator)).EndInit();
-            this.clientesBindingNavigator.ResumeLayout(false);
-            this.clientesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clientes1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingredienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingredienteBindingNavigator)).EndInit();
+            this.ingredienteBindingNavigator.ResumeLayout(false);
+            this.ingredienteBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,10 +319,10 @@
         #endregion
 
         private Database1DataSet database1DataSet;
-        private System.Windows.Forms.BindingSource clientesBindingSource;
-        private Database1DataSetTableAdapters.ClientesTableAdapter clientesTableAdapter;
+        private System.Windows.Forms.BindingSource ingredienteBindingSource;
+        private Database1DataSetTableAdapters.IngredienteTableAdapter ingredienteTableAdapter;
         private Database1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator clientesBindingNavigator;
+        private System.Windows.Forms.BindingNavigator ingredienteBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -396,18 +334,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton clientesBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.ToolStripButton ingredienteBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox id_IngredienteTextBox;
         private System.Windows.Forms.TextBox nomeTextBox;
-        private System.Windows.Forms.TextBox moradaTextBox;
-        private System.Windows.Forms.TextBox telefoneTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.BindingSource clientes1BindingSource;
-        private Database1DataSetTableAdapters.Clientes1TableAdapter clientes1TableAdapter;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.HelpProvider helpProvider1;
-        private System.Windows.Forms.HelpProvider helpProvider2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

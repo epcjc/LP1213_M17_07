@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form8
+    partial class Listar_Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -63,7 +63,9 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Clientes1TableAdapter = null;
             this.tableAdapterManager.ClientesTableAdapter = this.clientesTableAdapter;
+            this.tableAdapterManager.Encomenda1TableAdapter = null;
             this.tableAdapterManager.EncomendaTableAdapter = null;
+            this.tableAdapterManager.Ingrediente1TableAdapter = null;
             this.tableAdapterManager.IngredienteTableAdapter = null;
             this.tableAdapterManager.Refeições_EncomendadasTableAdapter = null;
             this.tableAdapterManager.Refeições_ingredientesTableAdapter = null;
@@ -126,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 293);
+            this.ClientSize = new System.Drawing.Size(608, 506);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.clientesDataGridView);
             this.Name = "Form8";

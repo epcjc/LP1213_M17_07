@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form2 : Form
+    public partial class InserirEmDuasForm : Form
     {
-        public Form2()
+        public InserirEmDuasForm()
         {
             InitializeComponent();
         }

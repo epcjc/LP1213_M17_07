@@ -76,82 +76,77 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Database1DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Encomendas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Encomendas.Designer.cs">
       <DependentUpon>Encomendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Pesquisar_refeições1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Pesquisar_refeições1.Designer.cs">
+      <DependentUpon>Pesquisar_refeições1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form10.cs">
+    <Compile Include="ListarIngridente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="ListarIngridente.Designer.cs">
+      <DependentUpon>ListarIngridente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form11.cs">
+    <Compile Include="ListarTipos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.cs">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <Compile Include="ListarTipos.Designer.cs">
+      <DependentUpon>ListarTipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="InserirEmDuasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="InserirEmDuasForm.Designer.cs">
+      <DependentUpon>InserirEmDuasForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Pesquisar_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Pesquisar_Cliente.Designer.cs">
+      <DependentUpon>Pesquisar_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Pesquisar_Ingrediete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Pesquisar_Ingrediete.Designer.cs">
+      <DependentUpon>Pesquisar_Ingrediete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="Pesquizar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Pesquizar.Designer.cs">
+      <DependentUpon>Pesquizar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="PesquisarRefeições.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="PesquisarRefeições.Designer.cs">
+      <DependentUpon>PesquisarRefeições.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="Errorprovider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Errorprovider.Designer.cs">
+      <DependentUpon>Errorprovider.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
+    <Compile Include="Listar_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="Listar_Clientes.Designer.cs">
+      <DependentUpon>Listar_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="Listar_Tipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="Listar_Tipo.Designer.cs">
+      <DependentUpon>Listar_Tipo.cs</DependentUpon>
     </Compile>
     <Compile Include="Iniciar.cs">
       <SubType>Form</SubType>
@@ -185,65 +180,65 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Relatorio1.cs">
+    <Compile Include="Listar_Ingredientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Relatorio1.Designer.cs">
-      <DependentUpon>Relatorio1.cs</DependentUpon>
+    <Compile Include="Listar_Ingredientes.Designer.cs">
+      <DependentUpon>Listar_Ingredientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Relatorio2.cs">
+    <Compile Include="Listar_Refeições.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Relatorio2.Designer.cs">
-      <DependentUpon>Relatorio2.cs</DependentUpon>
+    <Compile Include="Listar_Refeições.Designer.cs">
+      <DependentUpon>Listar_Refeições.cs</DependentUpon>
     </Compile>
-    <Compile Include="RelatóriaAula7.cs">
+    <Compile Include="Ficheiro_Ajuda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RelatóriaAula7.Designer.cs">
-      <DependentUpon>RelatóriaAula7.cs</DependentUpon>
+      <DependentUpon>Ficheiro_Ajuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Relatório.cs">
+    <Compile Include="Total_Ingredientes_Cada_Refeicao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Relatório.Designer.cs">
-      <DependentUpon>Relatório.cs</DependentUpon>
+    <Compile Include="Total_Ingredientes_Cada_Refeicao.Designer.cs">
+      <DependentUpon>Total_Ingredientes_Cada_Refeicao.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Encomendas.resx">
       <DependentUpon>Encomendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Pesquisar_refeições1.resx">
+      <DependentUpon>Pesquisar_refeições1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="ListarIngridente.resx">
+      <DependentUpon>ListarIngridente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form11.resx">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <EmbeddedResource Include="ListarTipos.resx">
+      <DependentUpon>ListarTipos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="InserirEmDuasForm.resx">
+      <DependentUpon>InserirEmDuasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Pesquisar_Cliente.resx">
+      <DependentUpon>Pesquisar_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Pesquisar_Ingrediete.resx">
+      <DependentUpon>Pesquisar_Ingrediete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Pesquizar.resx">
+      <DependentUpon>Pesquizar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="PesquisarRefeições.resx">
+      <DependentUpon>PesquisarRefeições.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="Errorprovider.resx">
+      <DependentUpon>Errorprovider.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="Listar_Clientes.resx">
+      <DependentUpon>Listar_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="Listar_Tipo.resx">
+      <DependentUpon>Listar_Tipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Iniciar.resx">
       <DependentUpon>Iniciar.cs</DependentUpon>
@@ -270,21 +265,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Relatorio1.resx">
-      <DependentUpon>Relatorio1.cs</DependentUpon>
+    <EmbeddedResource Include="Listar_Ingredientes.resx">
+      <DependentUpon>Listar_Ingredientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorio2.resx">
-      <DependentUpon>Relatorio2.cs</DependentUpon>
+    <EmbeddedResource Include="Listar_Refeições.resx">
+      <DependentUpon>Listar_Refeições.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="relatorios\Relatorio_Total_Ingredientes_Cada_Refeicaodlc.rdlc" />
     <EmbeddedResource Include="RelatóriaAula7.resx">
-      <DependentUpon>RelatóriaAula7.cs</DependentUpon>
+      <DependentUpon>Ficheiro_Ajuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatório.resx">
-      <DependentUpon>Relatório.cs</DependentUpon>
+    <EmbeddedResource Include="relatorios\Report1.rdlc" />
+    <EmbeddedResource Include="relatorios\Report2.rdlc" />
+    <EmbeddedResource Include="relatorios\Report3.rdlc" />
+    <EmbeddedResource Include="Total_Ingredientes_Cada_Refeicao.resx">
+      <DependentUpon>Total_Ingredientes_Cada_Refeicao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
-    <EmbeddedResource Include="Report3.rdlc" />
     <None Include="app.config" />
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
@@ -296,20 +292,6 @@
     </None>
     <None Include="Database1DataSet.xss">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet1.xsc">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet1.xss">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="lopes.hnd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -329,6 +311,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Realtório.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\cantina3.png" />
     <None Include="Resources\cantina2.png" />
     <None Include="Resources\cantina1.png" />

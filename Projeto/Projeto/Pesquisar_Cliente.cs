@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form3 : Form
+    public partial class Pesquisar_Cliente : Form
     {
-        public Form3()
+        public Pesquisar_Cliente()
         {
             InitializeComponent();
         }

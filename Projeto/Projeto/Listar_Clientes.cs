@@ -9,25 +9,25 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form9 : Form
+    public partial class Listar_Clientes : Form
     {
-        public Form9()
+        public Listar_Clientes()
         {
             InitializeComponent();
         }
 
-        private void encomendaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void clientesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.encomendaBindingSource.EndEdit();
+            this.clientesBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database1DataSet);
 
         }
 
-        private void Form9_Load(object sender, EventArgs e)
+        private void Form8_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet.Encomenda' table. You can move, or remove it, as needed.
-            this.encomendaTableAdapter.Fill(this.database1DataSet.Encomenda);
+            // TODO: This line of code loads data into the 'database1DataSet.Clientes' table. You can move, or remove it, as needed.
+            this.clientesTableAdapter.Fill(this.database1DataSet.Clientes);
 
         }
 

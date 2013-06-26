@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form7
+    partial class Errorprovider
     {
         /// <summary>
         /// Required designer variable.

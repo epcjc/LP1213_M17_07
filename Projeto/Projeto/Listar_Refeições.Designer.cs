@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Relatorio2
+    partial class Listar_Refeições
     {
         /// <summary>
         /// Required designer variable.
@@ -30,34 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Database1DataSet = new Projeto.Database1DataSet();
             this.RefeiçõesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Database1DataSet = new Projeto.Database1DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.RefeiçõesTableAdapter = new Projeto.Database1DataSetTableAdapters.RefeiçõesTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RefeiçõesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // RefeiçõesBindingSource
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.RefeiçõesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto.Report3.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(4, 12);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
-            this.reportViewer1.TabIndex = 0;
+            this.RefeiçõesBindingSource.DataMember = "Refeições";
+            this.RefeiçõesBindingSource.DataSource = this.Database1DataSet;
             // 
             // Database1DataSet
             // 
             this.Database1DataSet.DataSetName = "Database1DataSet";
             this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // RefeiçõesBindingSource
+            // reportViewer1
             // 
-            this.RefeiçõesBindingSource.DataMember = "Refeições";
-            this.RefeiçõesBindingSource.DataSource = this.Database1DataSet;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.RefeiçõesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Projeto.relatorios.Report3.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(4, 12);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
             // 
             // RefeiçõesTableAdapter
             // 
@@ -72,8 +72,8 @@
             this.Name = "Relatorio2";
             this.Text = "Relatorio2";
             this.Load += new System.EventHandler(this.Relatorio2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RefeiçõesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

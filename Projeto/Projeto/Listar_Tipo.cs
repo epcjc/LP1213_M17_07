@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form5 : Form
+    public partial class Listar_Tipo : Form
     {
-        public Form5()
+        public Listar_Tipo()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Projeto
 
         }
 
-        private void Form5_Load(object sender, EventArgs e)
+        private void Form9_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Encomenda' table. You can move, or remove it, as needed.
             this.encomendaTableAdapter.Fill(this.database1DataSet.Encomenda);
@@ -32,11 +32,6 @@ namespace Projeto
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            this.encomendaTableAdapter.FillByEncomenda(this.database1DataSet.Encomenda,Convert.ToInt16(textBox1.Text));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }

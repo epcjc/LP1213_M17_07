@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Form9
+    partial class Listar_Tipo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listar_Tipo));
             this.database1DataSet = new Projeto.Database1DataSet();
             this.encomendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.encomendaTableAdapter = new Projeto.Database1DataSetTableAdapters.EncomendaTableAdapter();

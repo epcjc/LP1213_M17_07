@@ -50,12 +50,13 @@
             this.listarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatorioaula7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realatórioAula7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.forms7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.relatorio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorio2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalIngredientesCadaRefeicaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -237,36 +238,51 @@
             // relatórioToolStripMenuItem
             // 
             this.relatórioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.relatorioaula7ToolStripMenuItem,
             this.realatórioAula7ToolStripMenuItem,
             this.forms7ToolStripMenuItem,
             this.relatorio1ToolStripMenuItem,
-            this.relatorio2ToolStripMenuItem});
+            this.relatorio2ToolStripMenuItem,
+            this.totalIngredientesCadaRefeicaoToolStripMenuItem,
+            this.menuToolStripMenuItem});
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
             this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.relatórioToolStripMenuItem.Text = "Relatório";
             this.relatórioToolStripMenuItem.Click += new System.EventHandler(this.relatórioToolStripMenuItem_Click);
             // 
-            // relatorioaula7ToolStripMenuItem
-            // 
-            this.relatorioaula7ToolStripMenuItem.Name = "relatorioaula7ToolStripMenuItem";
-            this.relatorioaula7ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.relatorioaula7ToolStripMenuItem.Text = "Relatorio";
-            this.relatorioaula7ToolStripMenuItem.Click += new System.EventHandler(this.relatorioaula7ToolStripMenuItem_Click);
-            // 
             // realatórioAula7ToolStripMenuItem
             // 
             this.realatórioAula7ToolStripMenuItem.Name = "realatórioAula7ToolStripMenuItem";
-            this.realatórioAula7ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.realatórioAula7ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.realatórioAula7ToolStripMenuItem.Text = "RealatórioAula7";
             this.realatórioAula7ToolStripMenuItem.Click += new System.EventHandler(this.realatórioAula7ToolStripMenuItem_Click);
             // 
             // forms7ToolStripMenuItem
             // 
             this.forms7ToolStripMenuItem.Name = "forms7ToolStripMenuItem";
-            this.forms7ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.forms7ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.forms7ToolStripMenuItem.Text = "Forms7";
             this.forms7ToolStripMenuItem.Click += new System.EventHandler(this.forms7ToolStripMenuItem_Click);
+            // 
+            // relatorio1ToolStripMenuItem
+            // 
+            this.relatorio1ToolStripMenuItem.Name = "relatorio1ToolStripMenuItem";
+            this.relatorio1ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.relatorio1ToolStripMenuItem.Text = "Relatorio1";
+            this.relatorio1ToolStripMenuItem.Click += new System.EventHandler(this.relatorio1ToolStripMenuItem_Click);
+            // 
+            // relatorio2ToolStripMenuItem
+            // 
+            this.relatorio2ToolStripMenuItem.Name = "relatorio2ToolStripMenuItem";
+            this.relatorio2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.relatorio2ToolStripMenuItem.Text = "Relatorio2";
+            this.relatorio2ToolStripMenuItem.Click += new System.EventHandler(this.relatorio2ToolStripMenuItem_Click);
+            // 
+            // totalIngredientesCadaRefeicaoToolStripMenuItem
+            // 
+            this.totalIngredientesCadaRefeicaoToolStripMenuItem.Name = "totalIngredientesCadaRefeicaoToolStripMenuItem";
+            this.totalIngredientesCadaRefeicaoToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.totalIngredientesCadaRefeicaoToolStripMenuItem.Text = "Total_Ingredientes_Cada_Refeicao";
+            this.totalIngredientesCadaRefeicaoToolStripMenuItem.Click += new System.EventHandler(this.totalIngredientesCadaRefeicaoToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -278,19 +294,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // relatorio1ToolStripMenuItem
+            // menuToolStripMenuItem
             // 
-            this.relatorio1ToolStripMenuItem.Name = "relatorio1ToolStripMenuItem";
-            this.relatorio1ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.relatorio1ToolStripMenuItem.Text = "Relatorio1";
-            this.relatorio1ToolStripMenuItem.Click += new System.EventHandler(this.relatorio1ToolStripMenuItem_Click);
-            // 
-            // relatorio2ToolStripMenuItem
-            // 
-            this.relatorio2ToolStripMenuItem.Name = "relatorio2ToolStripMenuItem";
-            this.relatorio2ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.relatorio2ToolStripMenuItem.Text = "Relatorio2";
-            this.relatorio2ToolStripMenuItem.Click += new System.EventHandler(this.relatorio2ToolStripMenuItem_Click);
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.menuToolStripMenuItem.Text = "menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -338,11 +347,12 @@
         private System.Windows.Forms.ToolStripMenuItem dataEntregaToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem relatorioaula7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realatórioAula7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem forms7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatorio1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatorio2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem totalIngredientesCadaRefeicaoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
 
 
     }
